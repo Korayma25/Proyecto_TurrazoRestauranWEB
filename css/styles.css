@@ -1,3 +1,6 @@
+/* ---- Fuentes ---- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Nunito+Sans:wght@400;600&display=swap');
+
 /* =========================================
    TURRAZO RESTAURANT - ESTILOS GLOBALES
    Este archivo es compartido por todo el equipo.
@@ -8,7 +11,7 @@
 :root {
   --color-primario: #D9481F;      /* naranja tostado - marca Turrazo */
   --color-primario-oscuro: #B5380F;
-  --color-secundario: #2E2A26;    /* casi negro, para textos */
+  --color-secundario: #2E2A26;    /* casi negro, para textos y navbar */
   --color-acento: #F2A93B;        /* amarillo calido - detalles */
   --color-fondo: #FFF8F0;         /* fondo crema */
   --color-blanco: #FFFFFF;
@@ -29,9 +32,6 @@
   --radio-borde: 0.75rem;
   --sombra-tarjeta: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
-
-/* ---- Fuentes ---- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Nunito+Sans:wght@400;600&display=swap');
 
 /* ---- Base ---- */
 body {
@@ -130,3 +130,58 @@ a:hover {
 .texto-primario   { color: var(--color-primario) !important; }
 .fondo-primario    { background-color: var(--color-primario) !important; }
 .texto-gris        { color: var(--color-gris-texto); }
+
+/* ---- Componentes de Layout Compartidos (Navbar y Footer) ---- */
+.navbar-turrazo {
+  background-color: var(--color-secundario);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-turrazo .navbar-brand {
+  color: var(--color-blanco);
+  letter-spacing: 0.5px;
+}
+
+.navbar-turrazo .navbar-brand:hover {
+  color: var(--color-acento);
+}
+
+.navbar-turrazo .nav-link {
+  color: #D3CDC6;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease;
+}
+
+.navbar-turrazo .nav-link:hover,
+.navbar-turrazo .nav-link:focus {
+  color: var(--color-acento);
+}
+
+.navbar-turrazo .nav-link.active {
+  color: var(--color-blanco) !important;
+  border-bottom: 2px solid var(--color-primario);
+}
+
+.badge-turrazo {
+  background-color: var(--color-acento);
+  color: var(--color-secundario);
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.footer-turrazo {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  padding: var(--espacio-lg) 0 var(--espacio-md);
+  margin-top: auto;
+}
+
+.footer-turrazo a {
+  color: #D3CDC6;
+  transition: color 0.2s ease;
+}
+
+.footer-turrazo a:hover {
+  color: var(--color-acento);
+}

@@ -119,5 +119,43 @@
   line-height: 1.5;
 }
 
+/* ---- Llamada a la acción (CTA) Nosotros ---- */
+.nosotros-cta {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  padding: var(--espacio-xl) 0;
+}
+
+.nosotros-cta-titulo {
+  color: var(--color-blanco);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: var(--espacio-sm);
+}
+
+.nosotros-cta-texto {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: var(--espacio-md);
+}
+
+.nosotros-btn-claro {
+  background-color: var(--color-blanco);
+  color: var(--color-primario);
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: var(--radio-borde);
+  border: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, color 0.15s ease;
+}
+
+.nosotros-btn-claro:hover {
+  background-color: var(--color-blanco);
+  color: var(--color-primario-oscuro);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
 
 

@@ -1,0 +1,9 @@
+/* css/carrito.css - Estilos específicos para la vista del carrito */
+#cart-container img {
+    border: 1px solid #dee2e6;
+}
+
+#cart-summary {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}

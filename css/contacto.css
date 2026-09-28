@@ -57,3 +57,27 @@
   margin-bottom: 0;
 }
 
+/* ---- Sección Valores ---- */
+.valor-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.valor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.valor-icono {
+  font-size: 2.5rem;
+  margin-bottom: var(--espacio-sm);
+  display: inline-block;
+  line-height: 1;
+}
+
+.valor-desc {
+  color: var(--color-gris-texto);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+

@@ -60,6 +60,60 @@
         <h1 class="display-5 fw-bold mb-2">Contáctanos</h1>
         <p class="text-muted lead">¿Tienes dudas, sugerencias o quieres reportar algún inconveniente? Escríbenos.</p>
       </div>
+
+      <div class="row g-5 justify-content-center">
+        <!-- Formulario de contacto -->
+        <div class="col-12 col-lg-7">
+          <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4">
+            <h2 class="h4 fw-bold mb-4">Envíanos un mensaje</h2>
+            <form id="form-contacto" novalidate>
+              <div class="mb-3">
+                <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" required placeholder="Ej. Juan Pérez">
+                <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" required placeholder="ejemplo@correo.com">
+                <div class="invalid-feedback">Por favor ingresa un correo electrónico válido.</div>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                <div class="invalid-feedback">Por favor escribe un mensaje.</div>
+              </div>
+              <button type="submit" class="btn btn-turrazo w-100 py-2 fw-semibold">Enviar mensaje</button>
+            </form>
+            <!-- Alerta de éxito simulado -->
+            <div id="alerta-exito" class="alert alert-success mt-4 d-none" role="alert">
+              ¡Mensaje enviado con éxito! Gracias por comunicarte con Turrazo Restaurant. Te responderemos pronto.
+            </div>
+          </div>
+        </div>
+
+        <!-- Información de contacto y horarios -->
+        <div class="col-12 col-lg-5">
+          <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4 h-100 bg-light">
+            <h2 class="h4 fw-bold mb-4">Información</h2>
+            <div class="mb-4">
+              <h5 class="fw-semibold text-primary">📍 Ubicación</h5>
+              <p class="text-muted mb-0">Av. Los Andes 123 y Solano, Ambato, Ecuador</p>
+            </div>
+            <div class="mb-4">
+              <h5 class="fw-semibold text-primary">📞 Teléfono</h5>
+              <p class="text-muted mb-0">+593 99 999 9999</p>
+            </div>
+            <div class="mb-4">
+              <h5 class="fw-semibold text-primary">✉️ Correo</h5>
+              <p class="text-muted mb-0">soporte@turrazorestaurant.com</p>
+            </div>
+            <div>
+              <h5 class="fw-semibold text-primary">⏰ Horarios de atención</h5>
+              <p class="text-muted mb-0">Lunes a Domingo: 10:00 - 22:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 

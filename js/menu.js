@@ -80,13 +80,26 @@ function aplicarFiltros() {
 if (inputBusqueda) inputBusqueda.addEventListener("input", aplicarFiltros);
 if (selectCategoria) selectCategoria.addEventListener("change", aplicarFiltros);
 
-// Función para agregar al carrito y mostrar el Toast de Bootstrap
+// Función para agregar al carrito utilizando las funciones publicadas por José
 function agregarProducto(id) {
     const productoSeleccionado = productos.find(p => p.id === id);
     if (productoSeleccionado) {
-        let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-        carrito.push(productoSeleccionado);
-        localStorage.setItem("carrito", JSON.stringify(carrito));
+        // Adaptamos el objeto al formato que espera cart.js 
+        const productoParaCarrito = {
+            id: productoSeleccionado.id,
+            restauranteId: productoSeleccionado.restaurante_id,
+            nombre: productoSeleccionado.nombre,
+            precio: productoSeleccionado.precio,
+            imagen: productoSeleccionado.imagen,
+            quantity: 1
+        };
+
+        // Llamamos a la función global de José
+        if (typeof addToCart === "function") {
+            addToCart(productoParaCarrito);
+        } else {
+            console.error("La función addToCart no está disponible.");
+        }
 
         // Mostrar aviso visual (Toast de Bootstrap)
         const toastElement = document.getElementById("toastAgregar");

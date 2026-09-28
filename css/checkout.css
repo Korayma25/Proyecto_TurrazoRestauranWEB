@@ -1,0 +1,19 @@
+/* =========================================
+   ESTILOS ESPECÍFICOS - MÓDULO CHECKOUT
+   ========================================= */
+
+#resumen-pedido .item-resumen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--espacio-xs) 0;
+    border-bottom: 1px dashed var(--color-gris-borde);
+}
+
+#resumen-pedido .item-resumen:last-child {
+    border-bottom: none;
+}
+
+.card {
+    border-radius: var(--radio-borde);
+}

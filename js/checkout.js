@@ -138,7 +138,7 @@ function mostrarPantallaExito(numeroOrden, nombreCliente) {
                             ✓
                         </div>
                         <h2 class="fw-bold mb-2">¡Pedido Confirmado!</h2>
-                        <p class="text-muted mb-4">Gracias por tu compra, <strong>${nombreCliente}</strong>. Tu pedido ha sido recibido y está en preparación.</p>
+                        <p class="text-muted mb-4">Gracias por tu compra, <strong>${nombreCliente}</strong>. Tu pedido ha sido recibido y esta en preparación.</p>
                         
                         <div class="p-3 bg-light rounded mb-4 text-start">
                             <p class="mb-1"><strong>Número de Pedido:</strong> <span class="badge bg-danger fs-6">${numeroOrden}</span></p>

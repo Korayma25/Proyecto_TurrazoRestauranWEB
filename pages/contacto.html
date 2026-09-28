@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turrazo Restaurant | Contacto</title>
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Estilos globales -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- Estilos compartidos Nosotros y Contacto -->
+  <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-turrazo sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase" href="../index.html">
+        Turrazo Restaurant
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTurrazo"
+        aria-controls="navbarTurrazo"
+        aria-expanded="false"
+        aria-label="Abrir menú de navegación"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTurrazo">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="restaurantes.html">Restaurantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <a href="carrito.html" class="btn btn-turrazo position-relative">
+            <span class="visually-hidden">Carrito de compras</span>
+            <span>🛒</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow-1 py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold mb-2">Contáctanos</h1>
+        <p class="text-muted lead">¿Tienes dudas, sugerencias o quieres reportar algún inconveniente? Escríbenos.</p>
+      </div>
+
+      <div class="row g-5 justify-content-center">
+        <!-- Formulario de contacto -->
+        <div class="col-12 col-lg-7">
+          <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4">
+            <h2 class="h4 fw-bold mb-4">Envíanos un mensaje</h2>
+            <form id="form-contacto" novalidate>
+              <div class="mb-3">
+                <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" required placeholder="Ej. Juan Pérez">
+                <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" required placeholder="ejemplo@correo.com">
+                <div class="invalid-feedback">Por favor ingresa un correo electrónico válido.</div>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                <div class="invalid-feedback">Por favor escribe un mensaje.</div>
+              </div>
+              <button type="submit" class="btn btn-turrazo w-100 py-2 fw-semibold">Enviar mensaje</button>
+            </form>
+            <!-- Alerta de éxito simulado -->
+            <div id="alerta-exito" class="alert alert-success mt-4 d-none" role="alert">
+              ¡Mensaje enviado con éxito! Gracias por comunicarte con Turrazo Restaurant. Te responderemos pronto.
+            </div>
+          </div>
+        </div>
+
+        <!-- Información de contacto y horarios -->
+        <div class="col-12 col-lg-5">
+          <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4 h-100 bg-light">
+            <h2 class="h4 fw-bold mb-4">Información</h2>
+            <div class="mb-4">
+              <h5 class="fw-semibold text-primary">📍 Ubicación</h5>
+              <p class="text-muted mb-0">Av. Los Andes 123 y Solano, Ambato, Ecuador</p>
+            </div>
+            <div class="mb-4">
+              <h5 class="fw-semibold text-primary">📞 Teléfono</h5>
+              <p class="text-muted mb-0">+593 99 839 5501</p>
+            </div>
+            <div class="mb-4">
+              <h5 class="fw-semibold text-primary">✉️ Correo</h5>
+              <p class="text-muted mb-0">soporte@turrazorestaurant.com</p>
+            </div>
+            <div>
+              <h5 class="fw-semibold text-primary">⏰ Horarios de atención</h5>
+              <p class="text-muted mb-0">Lunes a Domingo: 10:00 - 22:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-turrazo mt-auto">
+    <div class="container py-4 text-center">
+      <p class="text-white mb-0">&copy; 2026 Turrazo Restaurant - Proyecto académico</p>
+    </div>
+  </footer>
+
+  <!-- Scripts de Bootstrap y lógica -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/contacto.js"></script>
+</body>
+</html>
+</html>

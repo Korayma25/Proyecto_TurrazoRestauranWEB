@@ -184,6 +184,18 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* ---- Estilos adicionales para la Página de Contacto ---- */
+#form-contacto .form-control:focus {
+  border-color: var(--color-primario);
+  box-shadow: 0 0 0 0.25rem rgba(217, 72, 31, 0.15);
+}
 
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
 
 

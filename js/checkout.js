@@ -1,23 +1,19 @@
 // =========================================
-// LÓGICA DE CHECKOUT Y VALIDACIONES
+// LOGICA DE CHECKOUT Y VALIDACIONES
 // =========================================
 
 document.addEventListener('DOMContentLoaded', () => {
     cargarResumenPedido();
+    configurarValidacionFormulario();
 });
 
-/**
- * Lee los datos del carrito almacenados en LocalStorage por José (cart.js)
- * y despliega la lista de productos y el total en el checkout.
- */
+
 function cargarResumenPedido() {
     const contenedorResumen = document.getElementById('resumen-pedido');
     const elementoTotal = document.getElementById('total-pedido');
 
-    // Clave de LocalStorage acordada en el proyecto
     const carrito = JSON.parse(localStorage.getItem('turrazo_carrito')) || [];
 
-    // Si el carrito está vacío, mostramos mensaje y total $0.00
     if (carrito.length === 0) {
         contenedorResumen.innerHTML = `
             <div class="alert alert-warning text-center m-0" role="alert">
@@ -28,7 +24,6 @@ function cargarResumenPedido() {
         return;
     }
 
-    // Renderizar la lista de ítems del resumen
     let htmlContent = '<ul class="list-group list-group-flush mb-3">';
     let total = 0;
 
@@ -51,4 +46,36 @@ function cargarResumenPedido() {
 
     contenedorResumen.innerHTML = htmlContent;
     elementoTotal.textContent = `$${total.toFixed(2)}`;
+}
+
+/**
+ * Activa las validaciones nativas.
+ */
+function configurarValidacionFormulario() {
+    const formulario = document.getElementById('formulario-checkout');
+
+    if (!formulario) return;
+
+    formulario.addEventListener('submit', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        // Validar si el carrito tiene productos antes de enviar
+        const carrito = JSON.parse(localStorage.getItem('turrazo_carrito')) || [];
+        if (carrito.length === 0) {
+            alert('No puedes confirmar el pedido porque tu carrito esta vacio.');
+            return;
+        }
+
+        // Si el formulario no es valido 
+        if (!formulario.checkValidity()) {
+            formulario.classList.add('was-validated');
+            return;
+        }
+
+        formulario.classList.add('was-validated');
+
+        // Si todo esta correcto, procesamos la orden simulada
+        alert('Validacion exitosa!');
+    });
 }

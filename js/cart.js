@@ -12,9 +12,6 @@ function saveCart(cart) {
     updateCartCount();
 }
 
-/**
- * Agrega un producto al carrito o incrementa su cantidad si ya existe.
- */
 function addToCart(product) {
     let cart = getCart();
     const existingIndex = cart.findIndex(item => item.id === product.id);
@@ -35,18 +32,12 @@ function addToCart(product) {
     saveCart(cart);
 }
 
-/**
- * Elimina un producto del carrito por su ID.
- */
 function removeFromCart(productId) {
     let cart = getCart();
     cart = cart.filter(item => item.id !== productId);
     saveCart(cart);
 }
 
-/**
- * Cambia la cantidad de un producto específico.
- */
 function changeQuantity(productId, delta) {
     let cart = getCart();
     const item = cart.find(item => item.id === productId);
@@ -60,3 +51,42 @@ function changeQuantity(productId, delta) {
         saveCart(cart);
     }
 }
+
+/**
+ * Vacía por completo el carrito.
+ */
+function clearCart() {
+    localStorage.removeItem(CART_STORAGE_KEY);
+    updateCartCount();
+}
+
+/**
+ * Calcula el subtotal general del carrito.
+ */
+function getCartTotal() {
+    const cart = getCart();
+    return cart.reduce((sum, item) => sum + (item.precio * item.quantity), 0);
+}
+
+/**
+ * Cuenta el número total de ítems en el carrito.
+ */
+function getCartItemCount() {
+    const cart = getCart();
+    return cart.reduce((sum, item) => sum + item.quantity, 0);
+}
+
+/**
+ * Actualiza el contador visual del carrito en la barra de navegación.
+ */
+function updateCartCount() {
+    const badge = document.getElementById('cart-count');
+    if (badge) {
+        badge.textContent = getCartItemCount();
+    }
+}
+
+// Inicializar el contador al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    updateCartCount();
+});

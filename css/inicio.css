@@ -26,3 +26,22 @@
   object-fit: cover;
   width: 100%;
 }
+
+/* ---- Restaurantes destacados ---- */
+.inicio-restaurante-tipo {
+  color: var(--color-gris-texto);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.inicio-restaurante-calificacion {
+  color: var(--color-primario);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.inicio-restaurante-desc {
+  color: var(--color-gris-texto);
+  font-size: 0.9rem;
+}
+

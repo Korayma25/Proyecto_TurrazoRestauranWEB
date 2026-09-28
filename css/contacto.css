@@ -80,4 +80,44 @@
   line-height: 1.5;
 }
 
+/* ---- Sección Equipo ---- */
+.equipo-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.equipo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.equipo-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--espacio-sm);
+  box-shadow: 0 4px 10px rgba(217, 72, 31, 0.25);
+}
+
+.equipo-rol {
+  color: var(--color-gris-texto);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: var(--espacio-xs);
+}
+
+.equipo-frase {
+  color: var(--color-gris-texto);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+
 

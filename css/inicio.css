@@ -45,3 +45,47 @@
   font-size: 0.9rem;
 }
 
+/* ---- Cómo funciona ---- */
+.inicio-paso-card {
+  padding: var(--espacio-lg) var(--espacio-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inicio-paso-numero {
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: var(--espacio-sm);
+  box-shadow: 0 4px 8px rgba(217, 72, 31, 0.25);
+}
+
+.inicio-paso-icono {
+  font-size: 2.75rem;
+  margin-bottom: var(--espacio-sm);
+  line-height: 1;
+}
+
+.inicio-paso-titulo {
+  font-size: 1.25rem;
+  color: var(--color-secundario);
+  margin-bottom: var(--espacio-xs);
+}
+
+.inicio-paso-desc {
+  color: var(--color-gris-texto);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+

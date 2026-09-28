@@ -13,7 +13,15 @@
     <main class="container my-5">
         <h2 class="mb-4">Tu Carrito de Compras</h2>
         <div id="cart-container" class="row"></div>
-        <div id="cart-summary" class="card p-4 mt-4 shadow-sm d-none"></div>
+        <div id="cart-summary" class="card p-4 mt-4 shadow-sm d-none">
+            <div class="d-flex justify-content-between align-items-center">
+                <h4>Total a Pagar: $<span id="cart-total-amount">0.00</span></h4>
+                <div>
+                    <button id="btn-clear-cart" class="btn btn-outline-danger me-2">Vaciar Carrito</button>
+                    <a href="checkout.html" class="btn btn-success">Continuar al Pago</a>
+                </div>
+            </div>
+        </div>
     </main>
     <div id="footer-placeholder"></div>
 
@@ -25,6 +33,7 @@
             const cart = getCart();
             const container = document.getElementById('cart-container');
             const summary = document.getElementById('cart-summary');
+            const totalAmount = document.getElementById('cart-total-amount');
 
             if (cart.length === 0) {
                 container.innerHTML = `
@@ -36,9 +45,51 @@
                 summary.classList.add('d-none');
                 return;
             }
+
             summary.classList.remove('d-none');
-            container.innerHTML = '<p>Cargando productos...</p>';
+            let html = '<div class="col-lg-8"><ul class="list-group mb-3">';
+
+            cart.forEach(item => {
+                html += `
+                    <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                        <div class="d-flex align-items-center">
+                            <img src="${item.imagen}" alt="${item.nombre}" style="width: 60px; height: 60px; object-fit: cover;" class="rounded me-3">
+                            <div>
+                                <h6 class="my-0">${item.nombre}</h6>
+                                <small class="text-muted">Precio: $${item.precio.toFixed(2)}</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-sm btn-outline-secondary me-2" onclick="updateQty('${item.id}', -1)">-</button>
+                            <span class="fw-bold">${item.quantity}</span>
+                            <button class="btn btn-sm btn-outline-secondary ms-2" onclick="updateQty('${item.id}', 1)">+</button>
+                            <span class="ms-4 fw-bold">$${(item.precio * item.quantity).toFixed(2)}</span>
+                            <button class="btn btn-sm text-danger ms-3" onclick="removeItem('${item.id}')">Eliminar</button>
+                        </div>
+                    </li>
+                `;
+            });
+
+            html += '</ul></div>';
+            container.innerHTML = html;
+            totalAmount.textContent = getCartTotal().toFixed(2);
         }
+
+        function updateQty(id, delta) {
+            changeQuantity(id, delta);
+            renderCartView();
+        }
+
+        function removeItem(id) {
+            removeFromCart(id);
+            renderCartView();
+        }
+
+        document.getElementById('btn-clear-cart').addEventListener('click', () => {
+            clearCart();
+            renderCartView();
+        });
+
         document.addEventListener('DOMContentLoaded', renderCartView);
     </script>
 </body>

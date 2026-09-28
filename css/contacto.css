@@ -1,3 +1,59 @@
 /* ==========================================================================
    Estilos compartidos para las páginas Nosotros y Contacto
    ========================================================================== */
+
+/* ---- Encabezado de página Nosotros ---- */
+.nosotros-encabezado {
+  background: linear-gradient(180deg, rgba(242, 169, 59, 0.15) 0%, var(--color-fondo) 100%);
+  border-bottom: 1px solid var(--color-gris-borde);
+}
+
+.nosotros-subtitulo {
+  color: var(--color-gris-texto);
+}
+
+/* ---- Historia y Datos Destacados ---- */
+.nosotros-historia p {
+  color: var(--color-gris-texto);
+  line-height: 1.7;
+}
+
+.nosotros-datos-bloque {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-gris-borde);
+  border-radius: var(--radio-borde);
+  box-shadow: var(--sombra-tarjeta);
+}
+
+.nosotros-dato-item {
+  padding: var(--espacio-sm) 0;
+  border-bottom: 1px solid var(--color-gris-borde);
+  text-align: center;
+}
+
+.nosotros-dato-item:first-child {
+  padding-top: 0;
+}
+
+.nosotros-dato-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.nosotros-dato-numero {
+  display: block;
+  font-family: var(--fuente-titulos);
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-primario);
+  margin-bottom: var(--espacio-xs);
+}
+
+.nosotros-dato-desc {
+  color: var(--color-gris-texto);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+

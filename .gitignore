@@ -1,0 +1,46 @@
+# ===== Node.js =====
+# node_modules: dependencias descargables con npm; pesan mucho y se regeneran con "npm install".
+node_modules/
+# Logs de npm/yarn: son locales y no aportan al proyecto.
+npm-debug.log*
+yarn-error.log*
+# Archivos de entorno: pueden contener contraseñas y claves privadas.
+.env
+.env.*
+# Carpeta de compilación: se genera automaticamente.
+dist/
+build/
+
+# ===== Python =====
+# Bytecode compilado: lo genera el interprete y varia entre equipos.
+__pycache__/
+*.py[cod]
+# Entornos virtuales: son locales de cada maquina y se recrean con requirements.
+venv/
+.venv/
+# Archivos de entorno con credenciales.
+.env
+
+# ===== Java =====
+# Clases compiladas y paquetes: se generan al compilar, no son codigo fuente.
+*.class
+*.jar
+*.war
+# Carpetas de compilacion de Maven y Gradle.
+target/
+.gradle/
+out/
+
+# ===== Editor y sistema operativo =====
+# Configuraciones personales del editor: cada integrante usa la suya.
+.vscode/
+.idea/
+# Archivos que crea el sistema operativo automaticamente.
+.DS_Store
+Thumbs.db
+
+# ===== Otros =====
+# Temporales y copias de respaldo.
+*.log
+*.tmp
+*.bak

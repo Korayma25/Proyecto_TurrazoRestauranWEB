@@ -1,0 +1,218 @@
+[
+  {
+    "id": "p1",
+    "restaurante_id": 1,
+    "nombre": "Locro de Papa",
+    "descripcion": "Tradicional sopa ecuatoriana con aguacate y queso.",
+    "precio": 3.50,
+    "categoria": "entradas",
+    "imagen": "assets/img/productos/locro.png"
+  },
+  {
+    "id": "p2",
+    "restaurante_id": 1,
+    "nombre": "Fritada Completa",
+    "descripcion": "Carne de cerdo con mote, llapingachos, tostado, choclo y maduro.",
+    "precio": 7.00,
+    "categoria": "platos fuertes",
+    "imagen": "assets/img/productos/fritada.png"
+  },
+  {
+    "id": "p3",
+    "restaurante_id": 1,
+    "nombre": "Jugo de Tomate de Árbol",
+    "descripcion": "Refrescante jugo natural de tomate de árbol.",
+    "precio": 1.50,
+    "categoria": "bebidas",
+    "imagen": "assets/img/productos/jugo_tomate.png"
+  },
+  {
+    "id": "p4",
+    "restaurante_id": 1,
+    "nombre": "Helado de Paila",
+    "descripcion": "Helado tradicional de mora y guanábana.",
+    "precio": 2.00,
+    "categoria": "postres",
+    "imagen": "assets/img/productos/helado_paila.png"
+  },
+  {
+    "id": "p5",
+    "restaurante_id": 2,
+    "nombre": "Pan de Ajo con Queso",
+    "descripcion": "Rodajas de pan artesanal al horno con mantequilla de ajo y mozzarella.",
+    "precio": 2.50,
+    "categoria": "entradas",
+    "imagen": "assets/img/productos/pan_ajo.png"
+  },
+  {
+    "id": "p6",
+    "restaurante_id": 2,
+    "nombre": "Pizza Margarita",
+    "descripcion": "Salsa de tomate, queso mozzarella fresco y hojas de albahaca.",
+    "precio": 10.00,
+    "categoria": "platos fuertes",
+    "imagen": "assets/img/productos/pizza_margarita.png"
+  },
+  {
+    "id": "p7",
+    "restaurante_id": 2,
+    "nombre": "Gaseosa Italiana",
+    "descripcion": "Bebida gasificada de frutos rojos.",
+    "precio": 2.00,
+    "categoria": "bebidas",
+    "imagen": "assets/img/productos/gaseosa_italiana.png"
+  },
+  {
+    "id": "p8",
+    "restaurante_id": 2,
+    "nombre": "Tiramisú",
+    "descripcion": "Clásico postre italiano con bizcotelas, café y queso mascarpone.",
+    "precio": 4.50,
+    "categoria": "postres",
+    "imagen": "assets/img/productos/tiramisu.png"
+  },
+  {
+    "id": "p9",
+    "restaurante_id": 3,
+    "nombre": "Aros de Cebolla",
+    "descripcion": "Aros de cebolla empanizados crujientes con salsa de la casa.",
+    "precio": 3.00,
+    "categoria": "entradas",
+    "imagen": "assets/img/productos/aros_cebolla.png"
+  },
+  {
+    "id": "p10",
+    "restaurante_id": 3,
+    "nombre": "Hamburguesa Doble Extrema",
+    "descripcion": "Doble carne, doble tocino, queso cheddar, cebolla caramelizada.",
+    "precio": 8.50,
+    "categoria": "platos fuertes",
+    "imagen": "assets/img/productos/hamburguesa_doble.png"
+  },
+  {
+    "id": "p11",
+    "restaurante_id": 3,
+    "nombre": "Batido de Vainilla",
+    "descripcion": "Malteada cremosa de vainilla con crema batida.",
+    "precio": 3.50,
+    "categoria": "bebidas",
+    "imagen": "assets/img/productos/batido_vainilla.png"
+  },
+  {
+    "id": "p12",
+    "restaurante_id": 3,
+    "nombre": "Brownie con Helado",
+    "descripcion": "Brownie de chocolate caliente cubierto con helado de vainilla.",
+    "precio": 4.00,
+    "categoria": "postres",
+    "imagen": "assets/img/productos/brownie.png"
+  },
+  {
+    "id": "p13",
+    "restaurante_id": 4,
+    "nombre": "Edamame Salteado",
+    "descripcion": "Vainas de soya tiernas salteadas con sal marina.",
+    "precio": 3.00,
+    "categoria": "entradas",
+    "imagen": "assets/img/productos/edamame.png"
+  },
+  {
+    "id": "p14",
+    "restaurante_id": 4,
+    "nombre": "Sushi Roll California",
+    "descripcion": "Rollo de 10 piezas con cangrejo, pepino, aguacate y ajonjolí.",
+    "precio": 9.00,
+    "categoria": "platos fuertes",
+    "imagen": "assets/img/productos/california_roll.png"
+  },
+  {
+    "id": "p15",
+    "restaurante_id": 4,
+    "nombre": "Té Verde Frío",
+    "descripcion": "Té verde helado sin azúcar.",
+    "precio": 2.00,
+    "categoria": "bebidas",
+    "imagen": "assets/img/productos/te_verde.png"
+  },
+  {
+    "id": "p16",
+    "restaurante_id": 4,
+    "nombre": "Mochi de Fresa",
+    "descripcion": "Pastelito de arroz japonés relleno de helado de fresa.",
+    "precio": 3.50,
+    "categoria": "postres",
+    "imagen": "assets/img/productos/mochi.png"
+  },
+  {
+    "id": "p17",
+    "restaurante_id": 5,
+    "nombre": "Consomé de Pollo",
+    "descripcion": "Caldo de pollo con fideos, verduras y cilantro fresco.",
+    "precio": 2.50,
+    "categoria": "entradas",
+    "imagen": "assets/img/productos/consome.png"
+  },
+  {
+    "id": "p18",
+    "restaurante_id": 5,
+    "nombre": "Medio Pollo Asado",
+    "descripcion": "Medio pollo al carbón acompañado de papas fritas y ensalada.",
+    "precio": 8.00,
+    "categoria": "platos fuertes",
+    "imagen": "assets/img/productos/medio_pollo.png"
+  },
+  {
+    "id": "p19",
+    "restaurante_id": 5,
+    "nombre": "Limonada Natural",
+    "descripcion": "Limonada fresca con hielo.",
+    "precio": 1.50,
+    "categoria": "bebidas",
+    "imagen": "assets/img/productos/limonada.png"
+  },
+  {
+    "id": "p20",
+    "restaurante_id": 5,
+    "nombre": "Torta de Tres Leches",
+    "descripcion": "Bizcocho húmedo bañado en tres tipos de leche.",
+    "precio": 3.00,
+    "categoria": "postres",
+    "imagen": "assets/img/productos/tres_leches.png"
+  },
+  {
+    "id": "p21",
+    "restaurante_id": 6,
+    "nombre": "Croissant de Mantequilla",
+    "descripcion": "Croissant hojaldrado recién horneado.",
+    "precio": 2.00,
+    "categoria": "entradas",
+    "imagen": "assets/img/productos/croissant.png"
+  },
+  {
+    "id": "p22",
+    "restaurante_id": 6,
+    "nombre": "Sándwich de Pavo y Queso",
+    "descripcion": "Pan ciabatta con pechuga de pavo, queso suizo y pesto.",
+    "precio": 4.50,
+    "categoria": "platos fuertes",
+    "imagen": "assets/img/productos/sandwich_pavo.png"
+  },
+  {
+    "id": "p23",
+    "restaurante_id": 6,
+    "nombre": "Capuccino",
+    "descripcion": "Café espresso con leche vaporizada y abundante espuma.",
+    "precio": 2.50,
+    "categoria": "bebidas",
+    "imagen": "assets/img/productos/capuccino.png"
+  },
+  {
+    "id": "p24",
+    "restaurante_id": 6,
+    "nombre": "Cheesecake de Frutos Rojos",
+    "descripcion": "Tarta de queso horneada con mermelada de frutos rojos.",
+    "precio": 4.00,
+    "categoria": "postres",
+    "imagen": "assets/img/productos/cheesecake.png"
+  }
+]

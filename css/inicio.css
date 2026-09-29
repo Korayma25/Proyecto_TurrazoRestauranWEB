@@ -1,0 +1,128 @@
+/* =========================================
+   TURRAZO RESTAURANT - PÁGINA DE INICIO
+   Estilos específicos de index.html
+   Prefijo de clases: .inicio-*
+   ========================================= */
+
+/* ---- Hero ---- */
+.inicio-hero {
+  background: linear-gradient(135deg, var(--color-fondo) 0%, var(--color-blanco) 100%);
+  padding: var(--espacio-xl) 0;
+  border-bottom: 1px solid var(--color-gris-borde);
+}
+
+.inicio-hero-titulo {
+  color: var(--color-secundario);
+}
+
+.inicio-hero-subtitulo {
+  color: var(--color-gris-texto);
+}
+
+.inicio-hero-img {
+  border-radius: var(--radio-borde);
+  box-shadow: var(--sombra-tarjeta);
+  max-height: 420px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* ---- Restaurantes destacados ---- */
+.inicio-restaurante-tipo {
+  color: var(--color-gris-texto);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.inicio-restaurante-calificacion {
+  color: var(--color-primario);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.inicio-restaurante-desc {
+  color: var(--color-gris-texto);
+  font-size: 0.9rem;
+}
+
+/* ---- Cómo funciona ---- */
+.inicio-paso-card {
+  padding: var(--espacio-lg) var(--espacio-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inicio-paso-numero {
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: var(--espacio-sm);
+  box-shadow: 0 4px 8px rgba(217, 72, 31, 0.25);
+}
+
+.inicio-paso-icono {
+  font-size: 2.75rem;
+  margin-bottom: var(--espacio-sm);
+  line-height: 1;
+}
+
+.inicio-paso-titulo {
+  font-size: 1.25rem;
+  color: var(--color-secundario);
+  margin-bottom: var(--espacio-xs);
+}
+
+.inicio-paso-desc {
+  color: var(--color-gris-texto);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* ---- Llamada a la acción final ---- */
+.inicio-cta {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  padding: var(--espacio-xl) 0;
+}
+
+.inicio-cta-titulo {
+  color: var(--color-blanco);
+  font-size: 2.25rem;
+  margin-bottom: var(--espacio-xs);
+}
+
+.inicio-cta-texto {
+  color: var(--color-blanco);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto var(--espacio-md);
+  opacity: 0.95;
+}
+
+.inicio-btn-claro {
+  background-color: var(--color-blanco);
+  color: var(--color-primario);
+  border: 2px solid var(--color-blanco);
+  border-radius: var(--radio-borde);
+  font-weight: 700;
+  padding: 0.6rem 1.75rem;
+  transition: all 0.2s ease;
+}
+
+.inicio-btn-claro:hover {
+  background-color: transparent;
+  color: var(--color-blanco);
+}
+
+

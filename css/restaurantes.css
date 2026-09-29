@@ -1,0 +1,53 @@
+/* =========================================
+   TURRAZO RESTAURANT
+   ESTILOS ESPECÍFICOS - LISTADO DE RESTAURANTES
+   ========================================= */
+
+.imagen-restaurante {
+    height: 180px;
+    object-fit: cover;
+}
+
+.filtros-restaurantes {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-gris-borde);
+    border-radius: var(--radio-borde);
+    padding: var(--espacio-md);
+    box-shadow: var(--sombra-tarjeta);
+}/* =========================================
+   TURRAZO RESTAURANT
+   ESTILOS ESPECÍFICOS - LISTADO DE RESTAURANTES
+   ========================================= */
+
+.filtros-restaurantes {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-gris-borde);
+    border-radius: var(--radio-borde);
+    padding: var(--espacio-md);
+    box-shadow: var(--sombra-tarjeta);
+}
+
+.imagen-restaurante {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tarjeta-turrazo {
+    height: auto;
+    overflow: visible;
+}
+
+.tarjeta-turrazo .cuerpo {
+    height: auto !important;
+    display: block !important;
+}
+
+.tarjeta-turrazo .mt-auto {
+    margin-top: 20px !important;
+}
+
+.tarjeta-turrazo .btn-turrazo {
+    display: inline-block;
+    text-decoration: none;
+}

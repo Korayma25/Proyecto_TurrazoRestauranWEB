@@ -1,0 +1,56 @@
+[
+  {
+    "identificador": 1,
+    "nombre": "Sabor Andino",
+    "tipo_cocina": "Ecuatoriana",
+    "descripcion": "Restaurante especializado en comida tradicional de la sierra ecuatoriana.",
+    "imagen": "assets/img/restaurantes/sabor_andino.jpg",
+    "calificacion": 4.8,
+    "tiempo_entrega": "25-35 min"
+  },
+  {
+    "identificador": 2,
+    "nombre": "La Casa de la Pizza",
+    "tipo_cocina": "Italiana",
+    "descripcion": "Las mejores pizzas artesanales preparadas con ingredientes frescos.",
+    "imagen": "assets/img/restaurantes/casa_pizza.jpg",
+    "calificacion": 4.6,
+    "tiempo_entrega": "30-40 min"
+  },
+  {
+    "identificador": 3,
+    "nombre": "Burger House",
+    "tipo_cocina": "Hamburguesas",
+    "descripcion": "Las hamburguesas mas grandes y deliciosas de la nacion.",
+    "imagen": "assets/img/restaurantes/Burger_house.jpg",
+    "calificacion": 4.7,
+    "tiempo_entrega": "20-30 min"
+  },
+  {
+    "identificador": 4,
+    "nombre": "Sushi Express",
+    "tipo_cocina": "Japonesa",
+    "descripcion": "Sushi preparado en menos de 2 minutos con el mejor sabor.",
+    "imagen": "assets/img/restaurantes/sushi_express.jpg",
+    "calificacion": 4.5,
+    "tiempo_entrega": "35-45 min"
+  },
+  {
+    "identificador": 5,
+    "nombre": "El Buen Pollo",
+    "tipo_cocina": "Pollo",
+    "descripcion": "Pollo asado y platos familiares preparados con amor.",
+    "imagen": "assets/img/restaurantes/el_buen_pollo.jpg",
+    "calificacion": 4.4,
+    "tiempo_entrega": "25-35 min"
+  },
+  {
+    "identificador": 6,
+    "nombre": "Dulce Café",
+    "tipo_cocina": "Cafetería",
+    "descripcion": "Café y postres para compartir con alguien especial.",
+    "imagen": "assets/img/restaurantes/dulce_cafe.webp",
+    "calificacion": 4.7,
+    "tiempo_entrega": "15-25 min"
+  }
+]

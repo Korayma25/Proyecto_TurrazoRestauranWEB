@@ -105,3 +105,21 @@ document.addEventListener('carritoActualizado', () => {
 
 // Exponer la función en el ámbito global para facilitar la invocación directa desde otros módulos
 window.actualizarContadorCarrito = actualizarContadorCarrito;
+
+/**
+ * Permite regresar a la página anterior del historial del navegador (history.back).
+ * Si el usuario llegó directamente sin historial previo, redirige a una ruta de respaldo segura.
+ * @param {string} [rutaFallback='../index.html'] - Ruta predeterminada en caso de no existir historial previo
+ */
+function regresarPagina(rutaFallback = '../index.html') {
+  if (window.history.length > 1 && document.referrer && document.referrer.includes(window.location.host)) {
+    window.history.back();
+  } else if (window.history.length > 1 && !document.referrer) {
+    window.history.back();
+  } else {
+    window.location.href = rutaFallback;
+  }
+}
+
+// Exponer para su uso en botones HTML
+window.regresarPagina = regresarPagina;

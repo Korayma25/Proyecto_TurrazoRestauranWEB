@@ -11,13 +11,92 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/checkout.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-    <header>
-        <!-- Navbar dinámico cargado desde main.js -->
-    </header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-turrazo sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase" href="../index.html">
+                Turrazo Restaurant
+            </a>
 
-    <main class="container seccion">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTurrazo"
+                aria-controls="navbarTurrazo"
+                aria-expanded="false"
+                aria-label="Abrir menú de navegación"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTurrazo">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurantes.html">Restaurantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center">
+                    <a href="carrito.html" class="btn btn-turrazo position-relative">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="22"
+                            height="22"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                            aria-hidden="true"
+                            class="align-middle"
+                        >
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <span class="visually-hidden">Carrito de compras</span>
+                        <span
+                            id="contador-carrito"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill badge-turrazo"
+                        >
+                            0
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container seccion flex-grow-1">
+        <!-- Botón regresar -->
+        <div class="mb-3">
+            <button
+                type="button"
+                class="btn btn-regresar"
+                onclick="regresarPagina('carrito.html')"
+                aria-label="Regresar a la página anterior"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                >
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg>
+                <span>Regresar</span>
+            </button>
+        </div>
+
         <h1 class="mb-4 text-center">Finalizar compra</h1>
 
         <div class="row g-4">
@@ -94,6 +173,48 @@
             </section>
         </div>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-turrazo">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-12 col-md-4">
+                    <h5 class="text-white text-uppercase">Turrazo Restaurant</h5>
+                    <p class="mb-0">
+                        Tu comida favorita, a un clic. Elige un restaurante,
+                        arma tu pedido y confirma en pocos pasos.
+                    </p>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <h5 class="text-white">Enlaces rápidos</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="restaurantes.html">Restaurantes</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <h5 class="text-white">Contacto</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>Av. Los Andes 123, Ambato</li>
+                        <li>+593 99 999 9999</li>
+                        <li>Lun a Dom: 10:00 - 22:00</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <p class="text-center mb-0">
+                &copy; 2026 Turrazo Restaurant - Proyecto académico
+            </p>
+        </div>
+    </footer>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

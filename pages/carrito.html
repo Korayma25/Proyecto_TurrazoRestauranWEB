@@ -170,12 +170,12 @@
 
             summary.classList.remove('d-none');
             let html = '<div class="col-lg-8"><ul class="list-group mb-3">';
-
-            cart.forEach(item => {
+cart.forEach(item => {
                 html += `
                     <li class="list-group-item d-flex justify-content-between align-items-center py-3">
                         <div class="d-flex align-items-center">
-                            <img src="${item.imagen}" alt="${item.nombre}" style="width: 60px; height: 60px; object-fit: cover;" class="rounded me-3">
+                            <!-- Agregamos "../" para que la ruta suba a la carpeta raíz y encuentre la imagen desde la carpeta pages/ -->
+                            <img src="../${item.imagen}" alt="${item.nombre}" style="width: 60px; height: 60px; object-fit: cover;" class="rounded me-3">
                             <div>
                                 <h6 class="my-0">${item.nombre}</h6>
                                 <small class="text-muted">Precio: $${item.precio.toFixed(2)}</small>
